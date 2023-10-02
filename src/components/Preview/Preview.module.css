@@ -1,0 +1,35 @@
+.preview {
+  max-height: 700px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow-y: auto;
+}
+
+.preview img {
+  width: 100px;
+  height: 100px;
+}
+
+.preview blockquote {
+  font-style: italic;
+}
+
+.preview p > code {
+  background-color: #1e1e1e;
+  padding: 12px;
+}
+
+.preview h1 {
+  font-size: 24px;
+}
+
+.preview pre {
+  background-color: #1e1e1e;
+  padding: 12px;
+}
+
+.preview li {
+    margin-left: 20px;
+}
