@@ -5,3 +5,12 @@ body {
   background-color: #793fdf;
   font-family: "Poppins", sans-serif;
 }
+
+main {
+  min-height: 100vh;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
