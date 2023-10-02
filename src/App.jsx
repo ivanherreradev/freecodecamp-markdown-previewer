@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
-import './App.css'
-import { initialMarkdown } from './utils/constants/initialMarkdown'
 import { marked } from 'marked'
+import Editor from './components/Editor/Editor'
+import { initialMarkdown } from './utils/constants/initialMarkdown'
+import './App.css'
 
 const App = () => {
   const [markdown, setMarkdown] = useState(initialMarkdown)
@@ -14,16 +15,10 @@ const App = () => {
   }
 
   return (
-    <div>
-      <h1>Hello world 👋</h1>
-      <textarea
-        id="editor"
-        value={markdown}
-        onChange={handleInputChange}
-        placeholder="Enter your markdown here..."
-      ></textarea>
+    <main>
+      <Editor markdown={markdown} handleInputChange={handleInputChange} />
       <div id="preview" dangerouslySetInnerHTML={{ __html: parsedMarkdown }} />
-    </div>
+    </main>
   )
 }
 
