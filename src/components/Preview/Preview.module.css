@@ -37,3 +37,9 @@
 .preview li {
   margin-left: 20px;
 }
+
+@media (min-width: 300px) {
+  .preview pre{
+    white-space: pre-wrap;
+  }
+}
